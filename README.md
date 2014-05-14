@@ -4,12 +4,12 @@ magrittr -  Ceci n'est pas un pipe.
 [![Build Status](https://travis-ci.org/smbache/magrittr.png?branch=master)](https://travis-ci.org/smbache/magrittr)
 
 Make your code smokin' with magrittr's pipe operator.
-The pipe-forwarding mechanism provided are similar to (but not exactly 
+The pipe-forwarding mechanism provided is similar to (but not exactly 
 like) e.g. F#'s pipe-forward operator. It allows you to write code in a 
 much more clean and readable way, and you will avoid making a mess 
 in situations of multiple nested function calls. 
 It is particularly useful when manipulating data frames etc. 
-The package also contains a few useful aliases that make other R operators
+The package also contains a few useful features and aliases that
 fit well into the syntax advocated by the package.
 To learn more, see the included vignette.
 
@@ -19,12 +19,17 @@ Installation:
     library(devtools)
     install_github("smbache/magrittr")
 
+Alternatively, you can install from CRAN:
+
+    install.packages("magrittr")
+    
+
 Help overview:
 --------------
 
     help(package = magrittr)
 
-Example of usage:
+Examples of usage:
 ------
 
      # In many of the following examples we make use of the dplyr package
@@ -114,7 +119,7 @@ List of aliases provided:
     raise_to_power          `^`
     divide_by:              `/`
     divide_by_int:        `%/%`
-    mod:                 `\%\%`
+    mod:                  `\%%`
     and:                    `&`
     or:                     `|`
     equals                 `==`
@@ -122,4 +127,7 @@ List of aliases provided:
     is_weakly_greater_than `>=`
     is_less_than            `<`
     is_weakly_less_than    `<=`
-    `%.%`:                `%>%`
+    not                     `!`
+    set_colnames   `colnames<-`
+    set_rownames   `rownames<-`
+    set_names         `names<-`
