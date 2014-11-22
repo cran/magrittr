@@ -1,19 +1,46 @@
-#' Place a debug browser in a chain of commands.
+#' Debugging function for magrittr pipelines.
 #'
-#' When using magrittr's piping syntax, it can be useful to
-#' to debug at certain steps within a chain. This
-#' is a simple wrapper around \code{browser} for this purpose.
+#' This function is a wrapper around \code{browser}, which makes it
+#' easier to debug at certain places in a magrittr pipe chain.
 #'
-#' @param x A value.
-#' @return returns the argument \code{x}.
-#' @rdname debug_pipe
+#' @param x a value
+#' @return x
+#'
 #' @export
-#' @examples
-#' iris %>%
-#'   debug_pipe %>%
-#'   head
 debug_pipe <- function(x)
 {
   browser()
   x
 }
+
+#' Debugging function for functional sequences.
+#'
+#' This is a utility function for marking functions in a functional 
+#' sequence for debbuging.
+#'
+#' @param fseq a functional sequence.
+#' @param ... indices of functions to debug. 
+#' @return \code{invisible(NULL)}.
+#'
+#' @export
+debug_fseq <- function(fseq, ...)
+{
+  is_valid_index <- function(i) i %in% 1:length(functions(fseq))
+
+  indices <- list(...)
+    if (!any(vapply(indices, is.numeric, logical(1))) ||
+        !any(vapply(indices, is_valid_index, logical(1))))
+      stop("Index or indices invalid.", call. = FALSE)
+
+  invisible(lapply(indices, function(i) debug(functions(fseq)[[i]])))
+}
+
+#' @rdname debug_fseq
+#' @export
+undebug_fseq <- function(fseq)
+{
+  for (i in 1:length(functions(fseq)))
+    if (isdebugged(functions(fseq)[[i]])) 
+      undebug(functions(fseq)[[i]])
+}
+	
