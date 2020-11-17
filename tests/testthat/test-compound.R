@@ -1,6 +1,6 @@
-context("%<>%: compound assignment")
+context("assignment pipe")
 
-test_that("Compound assignment operator works", {
+test_that("Assignment pipe works", {
 
   x <- y <- 1:10
   x[1:5] <- sin(cos(x[1:5]))
@@ -19,4 +19,12 @@ test_that("Compound assignment operator works", {
   z %<>% add(2) %T>% plot
   expect_that(z, is_identical_to(as.numeric(3:12)))
 
+})
+
+test_that("can't assign to non-assignment expression", {
+  msg <- conditionMessage(tryCatch(error = identity, identity(1) <- NULL))
+  expect_error(
+    1 %>% identity() %<>% identity(),
+    msg
+  )
 })

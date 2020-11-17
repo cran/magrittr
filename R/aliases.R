@@ -30,6 +30,9 @@
 #' \code{set_colnames}       \tab \code{`colnames<-`} \cr
 #' \code{set_rownames}       \tab \code{`rownames<-`} \cr
 #' \code{set_names}          \tab \code{`names<-`} \cr
+#' \code{set_class}          \tab \code{`class<-`} \cr
+#' \code{set_attributes}     \tab \code{`attributes<-`} \cr
+#' \code{set_attr }          \tab \code{`attr<-`} \cr
 #' }
 #'
 #' @usage NULL
@@ -175,9 +178,26 @@ set_names <- `names<-`
 #' @rdname aliases
 #' @usage NULL
 #' @export
+set_class <- `class<-`
+
+#' @rdname aliases
+#' @usage NULL
+#' @export
 inset <- `[<-`
 
 #' @rdname aliases
 #' @usage NULL
 #' @export
 inset2 <- `[[<-`
+
+#' @rdname aliases
+#' @usage NULL
+#' @export
+set_attr <- `attr<-`
+
+#' @rdname aliases
+#' @usage NULL
+#' @export
+set_attributes <- `attributes<-`
+
+
