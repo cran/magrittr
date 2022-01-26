@@ -1,7 +1,7 @@
 Type: Package
 Package: magrittr
 Title: A Forward-Pipe Operator for R
-Version: 2.0.1
+Version: 2.0.2
 Authors@R: 
     c(person(given = "Stefan Milton",
              family = "Bache",
@@ -32,9 +32,10 @@ Suggests: covr, knitr, rlang, rmarkdown, testthat
 VignetteBuilder: knitr
 ByteCompile: Yes
 Encoding: UTF-8
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
+Config/Needs/website: tidyverse/tidytemplate
 NeedsCompilation: yes
-Packaged: 2020-11-17 12:44:34 UTC; lionel
+Packaged: 2022-01-26 10:19:52 UTC; lionel
 Author: Stefan Milton Bache [aut, cph] (Original author and creator of
     magrittr),
   Hadley Wickham [aut],
@@ -42,4 +43,4 @@ Author: Stefan Milton Bache [aut, cph] (Original author and creator of
   RStudio [cph, fnd]
 Maintainer: Lionel Henry <lionel@rstudio.com>
 Repository: CRAN
-Date/Publication: 2020-11-17 16:20:06 UTC
+Date/Publication: 2022-01-26 15:32:44 UTC
