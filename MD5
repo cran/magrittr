@@ -1,7 +1,7 @@
-c0671668f2469eaa7a760edcdefb659b *DESCRIPTION
+b916d6c485b3a0d2c034c50bda957582 *DESCRIPTION
 b1e40687f249a5e3b384b410b621f40a *LICENSE
 6947759fe41ccdda4f5fd4759f68a4a8 *NAMESPACE
-0aebd0a7b90095c554020f4cb05c0494 *NEWS.md
+631d52ef319ccec69a02e519dfe0a17a *NEWS.md
 0dd7466a6ea2104983d2230d14af6517 *R/aliases.R
 69feb260d9d9596cff7279727b7194ff *R/debug_pipe.R
 316e23f4777296ee8dfe469684f244cb *R/freduce.R
@@ -13,10 +13,10 @@ b355c081f7dc2aced5ca65e9020a75ba *README.md
 084078aa68b48964d1edd278e8860b0b *build/vignette.rds
 786d5e98d2db43ca57b1b05b6c98e262 *inst/doc/magrittr.R
 ae2a5f945966923225eb4b7fd50e7834 *inst/doc/magrittr.Rmd
-b0dd0c1c6f9dae077ae2c37df675a0e7 *inst/doc/magrittr.html
+a54471576785915e722e83cc96735845 *inst/doc/magrittr.html
 e6000bf0b0354a95dd0de7a3768c0ad0 *inst/doc/tradeoffs.R
 ade5c863f8b1f237fcf3642076c00d3e *inst/doc/tradeoffs.Rmd
-e5ae03d258982177a89340517e2ef13e *inst/doc/tradeoffs.html
+d842f8208444adc942eca16846ccfa88 *inst/doc/tradeoffs.html
 320671fcbeb26a1ad31a8be1b8259db1 *inst/logo-hex.png
 49d0817fc5a43e2c1593194ab84fc1d1 *inst/logo-hex.svg
 d874c14ccdcddaeae92f28cd7c8097ca *inst/logo.png
@@ -38,7 +38,7 @@ c6cef1f6258a3061fb862eb045dcc83e *man/pipe.Rd
 447ded028c32a4bcdd7f5334b8acc99a *man/pipe_eager_lexical.Rd
 adc2d8bbc2bf764e31a81697036b84db *man/print.fseq.Rd
 6831d192911395cd3b279c65676efea7 *man/tee.Rd
-e1fe3803652bf3494b0828a9c9ff4f26 *src/pipe.c
+72eb49eb68a7128ba3b859142f1bf9cc *src/pipe.c
 f805d279bd107cd19da7f3fa8fb4b574 *src/utils.c
 edbdd325f4ab34f277befd07c0f7b460 *src/utils.h
 5e09eabe3f9582bc4a32ca84f35d8a9b *tests/testthat.R
